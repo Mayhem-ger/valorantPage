@@ -1,10 +1,7 @@
-.background {
-  
+.bg {
+  background-color: teal;
 }
-  .bg-cover {
-    background-size: cover !important;
-  }
 
-.headline {
-    text-align: center;
+.pic-test {
+  height: 15em;
 }
