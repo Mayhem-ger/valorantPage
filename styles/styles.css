@@ -1,15 +1,10 @@
-.page-holder {
-    min-height: 100vh;
-  }
+.background {
   
+}
   .bg-cover {
     background-size: cover !important;
   }
 
 .headline {
     text-align: center;
-}
-
-div {
-    background-color: red;
 }
