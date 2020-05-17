@@ -2,15 +2,17 @@
   background-color: teal;
 }
 
-.bg-ws {
-  background-color: darkkhaki;
+.bg-clip {
+  background-color: #FFCA23
 }
+
 
 .offer-height {
   height: 20em;
 }
 
 #myVideo {
+  padding-bottom: 2rem;
   right: 0;
   bottom: 0;
   min-width: 100%;
