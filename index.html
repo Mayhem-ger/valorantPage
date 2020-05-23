@@ -3,9 +3,14 @@
     <head>
         <link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="styles/styles.css">
+        <link href="styles/venobox.css" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link href="styles/icofont/icofont.css" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
         <title>Der Honiglecker</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166905618-1"></script>
         <script>
         window.dataLayer = window.dataLayer || [];
@@ -14,7 +19,6 @@
         gtag('config', 'UA-166905618-1');</script>
     </head>
     <body>
-        <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#">
                 <img src="res/img/icon.png" width="50" height="50" class="d-inline-block align-top" alt="">
@@ -29,107 +33,299 @@
                   <a class="nav-item nav-link" href="#taste">Taste</a>
                   <a class="nav-item nav-link" href="#pricing">Pricing</a>
                   <a class="nav-item nav-link" href="#contact">Contact</a>
+                  <a href="#pricing" class="nav-item nav-link get-started-btn scrollto">Get Started</a>
                 </div>
               </div>
           </nav>
-        </header>
-        <div id="welcome" class="container-fluid text-center bg-clip">
-          <div class="row vh-100">
-            <div class="col-md-8 offset-md-2 my-auto">
-                <h1 class="align-middle display-4 headline">The home of Valorant montages.</h1>
-                  <p class="headline lead">I create Valorant montages to make your frags look even more sick.</p>
-                <img src="res/img/icon.png" width="200" height="200">
-            </div>
-          </div>
-        </div>
 
-        <div id="mypromise" class="container-fluid">
-          <div class="row offer-height">
-            <div class="col my-auto text-center">
-            <img src="res/img/mailbox.gif">
-            </div>
-            <h1 class="col display-5 text-left my-auto bg-clip">You deliver as much content as you want. I pick what you need.</h1>
-            </div> 
-          <div class="row offer-height">
-            <h1 class="display-5 col text-right my-auto bg-clip">You decide how long your clip should be. I make this time an experience.</h1>
-            <div class="col my-auto text-center">
-              <img src="res/img/film-roll.gif">
-              </div>
-            </div>
-          <div class="row offer-height">
-            <div class="col my-auto text-center">
-              <img src="res/img/tune.gif">
-              </div>
-            <h1 class="display-5 col text-left my-auto offer-text bg-clip">You deliver the sound you want. I care for designing and mixing it.</h1>
-            </div>
-          </div>
-
-          <div id="taste" class="container-fluid">
-            <div class="row">
-              <video autoplay muted loop id="myVideo">
-                <source src="res/movie.mp4" type="video/mp4">
+          <div class="video-background-holder">
+            <div class="video-background-overlay"></div>
+            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                  <source src="res/movie.mp4" type="video/mp4">
               </video>
-              </div>
-          </div>
-          
-        <div id="pricing" class="container">
-          <div class="row">
-            <div class="col-lg">
-            <div class="card" style="width: 18rem;">
-              <img src="res/img/10.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Package 1</h5>
-                <p class="card-text">Give your friends and clan members a sneak peek how you own haven, split or bind.
-                </p>
-                <a href="https://www.fiverr.com/derhoniglecker" class="btn btn-primary">Continue (20.00 Euro)</a>
+            <div class="video-background-content container h-100">
+              <div class="d-flex h-100 text-center align-items-center">
+                <div class="w-100">
+                  <div class="video-text">
+                    <h1 class="display-4">THE HOME OF VALORANT MONTAGES</h1>
+                    <h3 class="lead">CLIPS BY ME FOR YOU</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-            <div class="col-lg">
-            <div class="card" style="width: 18rem;">
-              <img src="res/img/30.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Package 2</h5>
-                <p class="card-text">More than a sneak peek but definitely less to show everyting you mastered in the last days.</p>
-                <a href="https://www.fiverr.com/derhoniglecker" class="btn btn-primary">Continue (40.00 Euro)</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg">
-            <div class="card" style="width: 18rem;">
-              <img src="res/img/60.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Package 3</h5>
-                <p class="card-text">Congratulations. You are the initiator of real art. Lean back and enjoy your full length frag movie.</p>
-                <a href="https://www.fiverr.com/derhoniglecker" class="btn btn-primary">Continue (60.00 Euro)</a>
-              </div>
-            </div>
-          </div>
-          </div>
-        </div>
 
-        <div id="contact" class="container-fluid text-center bg-clip">
-          <div class="row vh-100">
-            <div class="col-md-8 offset-md-2 my-auto">
-                <h1 class="align-middle display-4 headline">Get your own clip now!</h1>
-                <a href="https://www.fiverr.com/derhoniglecker" target="_blank"><img src="res/img/fiver_logo.png" width="30%" height="30%"></a>
-            </div>
-          </div>
-        </div>
+          <section id="mypromise" class="services section-bg">
+            <div class="container" data-aos="fade-up">
+      
+              <div class="section-title">
+                <h2>My Promise</h2>
+                <p>I promise you a thorough thought Valorant Clip that takes away your breath during the first 15 seconds of watching. I am focused on composing your frags with state of the art editing and sound engineering to make you even shine more as soon as people watch your movie.</p>
+              </div>
+      
+              <div class="row">
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                  <div class="icon-box iconbox-blue">
+                    <div class="icon">
+                      <img src="res/img/mailbox.gif">
+                    </div>
+                    <h4><a href="">Send what you want</a></h4>
+                    <p>You deliver as much content as you want. I pick what you need.</p>
+                  </div>
+                </div>
+      
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+                  <div class="icon-box iconbox-orange ">
+                    <div class="icon">
+                      <img src="res/img/film-roll.gif">
+                    </div>
+                    <h4><a href="">Custom clip length</a></h4>
+                    <p>You decide how long your clip should be. I make this time an experience.</p>
+                  </div>
+                </div>
+      
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="icon-box iconbox-pink">
+                    <div class="icon">
+                      <img src="res/img/tune.gif">
+                    </div>
+                    <h4><a href="">Sound engineering</a></h4>
+                    <p>You deliver the sound you want. I care for designing and mixing it.</p>
+                  </div>
+                </div>
+                </div>
+                </div>
+              </section>
 
-          <!-- Site footer -->
-    <footer>
-      <div class="container text-center">
+    <!-- ======= About Video Section ======= -->
+    <section id="about-video" class="about-video">
+      <div class="container" data-aos="fade-up">
+
         <div class="row">
-            <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
-         <a href="#">Der Honiglecker</a>.</p>
-         <br>
-         <p class="copyright-text"><a href="impressum.html">Impressum</a></p>.
-         <br>
-         <p class="copyright-text"><a href="dsgvo.html">GDPR</a></p>.
+
+          <div class="col-lg-6 video-box align-self-baseline" data-aos="fade-right" data-aos-delay="100">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/ZgchNeieAmU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
           </div>
+
+          <div class="col-lg-6 pt-3 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
+            <h2>This could be your next clip. Interested?</h2>
+            <p>
+              My promise to you is a fragmovie that blows away everybody who is watching it. I am one of the view movie editors who started creating professional Valorant clips since the beta was published. 
+              At the moment I am working on 3 clips on average per day and have a 5 star rating on fiver. 
+              You can read a view recommendations on my fiverr page. 
+              <br>
+              Summarized: I promise quality and deliver quality. 
+            </p>
+          </div>
+
         </div>
-        <!--Start Cookie Script-->
+
+      </div>
+    </section><!-- End About Video Section -->
+
+
+      <!-- ======= Pricing Section ======= -->
+      <section id="pricing" class="pricing">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="section-title">
+            <h2>Pricing</h2>
+            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          </div>
+  
+          <div class="row">
+  
+            <div class="col-lg-4 col-md-6" data-aos="zoom-im" data-aos-delay="100">
+              <div class="box">
+                <h3>Beginner</h3>
+                <h4><sup>$</sup>25</h4>
+                <ul>
+                  <li>Up to Unlimited Minutes of Footage Provided</li>
+                  <li>Up to 1 Minute Running Time</li>
+                  <li>Color Grading</li>
+                  <li>Sound Design & Mixing</li>
+                  <li>1 free revision</li>
+                  <li>2 days delivery</li>
+                </ul>
+                <div class="btn-wrap">
+                  <a href="https://www.fiverr.com/derhoniglecker" class="btn-buy">Buy Now</a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="100">
+              <div class="box featured">
+                <h3>Intermediate</h3>
+                <h4><sup>$</sup>40</h4>
+                <ul>
+                  <li>Up to Unlimited Minutes of Footage Provided</li>
+                  <li>Up to 2 Minute Running Time</li>
+                  <li>Color Grading</li>
+                  <li>Sound Design & Mixing</li>
+                  <li>1 free revision</li>
+                  <li>3 days delivery</li>
+                </ul>
+                <div class="btn-wrap">
+                  <a href="https://www.fiverr.com/derhoniglecker" class="btn-buy">Buy Now</a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="100">
+              <div class="box">
+                <h3>Pro</h3>
+                <h4><sup>$</sup>60</span></h4>
+                <ul>
+                  <li>Up to Unlimited Minutes of Footage Provided</li>
+                  <li>Up to 3 Minute Running Time</li>
+                  <li>Color Grading</li>
+                  <li>Sound Design & Mixing</li>
+                  <li>1 free revision</li>
+                  <li>3 days delivery</li>
+                </ul>
+                <div class="btn-wrap">
+                  <a href="https://www.fiverr.com/derhoniglecker" class="btn-buy">Buy Now</a>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
+      </section><!-- End Pricing Section -->
+
+
+
+            <!-- ======= Frequently Asked Questions Section ======= 
+    <section id="faq" class="faq section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" class="collapse" href="#faq-list-1">Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-parent=".faq-list">
+                <p>
+                  Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-2" class="collapsed">Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-parent=".faq-list">
+                <p>
+                  Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-3" class="collapsed">Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-parent=".faq-list">
+                <p>
+                  Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-4" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-4" class="collapse" data-parent=".faq-list">
+                <p>
+                  Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-5" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-5" class="collapse" data-parent=".faq-list">
+                <p>
+                  Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </section>End Frequently Asked Questions Section -->
+
+ <!-- ======= Footer ======= -->
+ <footer id="footer">
+
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 footer-contact">
+          <h3>Der Honiglecker</h3>
+        </div>
+
+        <div class="col-lg-2 col-md-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#taste">Taste</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#mypromise">My Promise</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="impressum.html">Disclaimer</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="dsgvo.html">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Our skills</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Valorant Clips</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Sound Engineering</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Video Editing</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Social Media presence</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Color grading</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6 footer-newsletter">
+          <h4>Thanks for visiting us!</h4>
+          <p>We hope to see you soon on fiverr. May the frag force be with you.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container d-md-flex w-100 py-4">
+
+    <div class="mr-md-auto text-center text-md-left">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Der Honiglecker</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/ -->
+        With design parts from <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+    <div class="social-links text-center text-md-right pt-3 pt-md-0">
+      <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+      <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+      <a href="#" class="youtube"><i class="bx bxl-youtube"></i></a>
+    </div>
+  </div>
+</footer><!-- End Footer -->
+
+
+    <!--Start Cookie Script-->
 <script type="text/javascript" charset="UTF-8" src="http://chs03.cookie-script.com/s/e8028c3aa445a928334d30d1d85a02ce.js"></script>
 <!--End Cookie Script-->
 </footer>
@@ -137,5 +333,10 @@
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="js/venobox.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+          AOS.init()
+        </script>
     </body>
 </html>
