@@ -2,6 +2,11 @@ body {
   overflow-x: hidden;
 }
 
+.full-width {
+  position: absolute;
+  width: 100%;
+}
+
 .bg {
   background-color: teal;
 }
@@ -577,7 +582,7 @@ section {
 }
 
 .section-bg {
-  background-color: #f8fbfe;
+background-color: #f8fbfe;
 }
 
 .section-title {
